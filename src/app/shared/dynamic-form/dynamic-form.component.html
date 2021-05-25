@@ -1,0 +1,15 @@
+
+    <section>
+       
+        <form [formGroup]="form" (ngSubmit)="OnSubmit()" class="content">
+            <div *ngFor="let field of fields" class="form-row field">
+                <app-dynamic-field [field]="field" [form]="form"></app-dynamic-field>
+            </div>
+            <div class="submit-container">
+                <button class="submit btn btn-outline-secondary" [disabled]="!form.valid" type="button">
+                    <span style="text-transform: capitalize;">Submit</span>
+                </button>
+            </div>
+        </form>
+    </section>
+

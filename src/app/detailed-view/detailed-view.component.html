@@ -1,0 +1,10 @@
+<div class="detailed-view">
+    <app-project-list
+    [projectId] = "project.ID" 
+    [tasks]="project.tasks"
+      (samplingTimeSelected)="onSelectedSamplingTime($event)"></app-project-list>
+    <app-dynamic-form [fields]="fields">
+    
+    </app-dynamic-form>
+    
+</div>

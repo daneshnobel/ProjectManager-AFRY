@@ -1,0 +1,22 @@
+<div [formGroup]="form" class="field-set">
+    <label [attr.for]="field.ID">{{field.label}}</label>
+    <div [ngSwitch]="field.controlType" >
+        <input *ngSwitchCase="'inputTextbox'" class="text"
+        [formControlName]="field.ID"
+        [id]="field.ID" value="field.value" type="text"
+         />
+         <span *ngSwitchCase="'inputTextbox'" class="focus-bg"></span>
+         <input *ngSwitchCase="'inputNumber'" class="number"
+        [formControlName]="field.ID"
+        [id]="field.ID" [value] ="field.value" [step]="field.step" type="number"
+         />
+         <input *ngSwitchCase="'inputCheckbox'" class="check"
+         [formControlName]="field.ID" 
+         [id]="field.ID" [value] = "field.value"  type="checkbox"
+          />
+
+        
+    </div>
+    
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="!isValid">{{field.label}} is required</div>

@@ -1,0 +1,17 @@
+
+.detailed-view{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    margin-top:1rem;
+    app-project-list{
+        display: flex;
+        // flex-basis: 15%;
+    }
+    app-dynamic-form{
+        flex:2;
+    }
+
+}
+   
+

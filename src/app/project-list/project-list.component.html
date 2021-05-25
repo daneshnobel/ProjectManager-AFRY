@@ -1,0 +1,6 @@
+<ul class="list">
+    <li class="item" *ngFor="let task of tasks" 
+    (click)="onItemClicked({time:task.time,ID:projectId})">
+        <span>{{formatTime(task.time)}}</span>
+    </li>
+</ul>

@@ -1,0 +1,38 @@
+
+<table>
+    <thead>
+        <tr>
+            
+            <th *ngFor="let label of dataGrid?.header">{{label}}</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fieldgroups of dataGrid?.fieldset">
+            <td *ngFor="let field of fieldgroups">
+                {{field}}
+            </td>
+        </tr>
+        <!-- <tr >
+            <td>2021-04-21 11:00:05 AM</td>
+            <td>Road Contruction 1</td>
+            <td>2</td>
+            <td>False</td>
+            <td>5.6KM</td>
+        </tr>
+        <tr>
+            <td>2021-04-21 11:00:05 AM</td>
+            <td>Road Contruction 1</td>
+            <td>2</td>
+            <td>False</td>
+            <td>2.6KM</td>
+        </tr>
+        <tr>
+            <td>2021-04-21 11:00:05 AM</td>
+            <td>Road Contruction 1</td>
+            <td>2</td>
+            <td>False</td>
+            <td>3.9KM</td>
+        </tr> -->
+    </tbody>
+</table>

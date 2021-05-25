@@ -1,0 +1,33 @@
+table {
+    thead,
+    tr,
+    tbody {
+        display: contents;
+    }
+    display: grid;
+    grid-template-columns: minmax(100px,1.4fr) minmax(100px, 1.2fr) minmax(100px,1.1fr) minmax(150px,1.4fr) minmax(70px,1.1fr);
+    
+    th,
+    td {
+        padding: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;    
+    }
+    th{
+        position: sticky;
+        top:0;
+        color:#fff;
+        text-align: left;
+        font-weight: 600;
+        background: #d8e3e7;
+        color: white;
+    }
+    td{
+        background: #f8f5f1;
+        
+    }
+    tr:nth-child(even) td{
+        background: #fff;
+    }
+}
